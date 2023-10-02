@@ -6,7 +6,7 @@ class NubbinBattery(Battery):
         super().__init__(current_date, last_service_date)
         self.last_service_date = last_service_date
         self.current_date = current_date
-        self.nubbin_year_need_service = 2
+        self.nubbin_year_need_service = 4
 
     def needs_service(self):
         year_diff = self.current_date.year - self.last_service_date.year
